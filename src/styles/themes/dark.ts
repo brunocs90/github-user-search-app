@@ -11,9 +11,10 @@ export const darkTheme: DefaultTheme = {
         'text-primary': '#FFFFFF',
         'text-secondary': '#FFFFFF',
         'text-terciary': '#FFFFFF',
-        blue: '#0079FF',
-        'blue-hover': '#60ABFF',
+        'button-blue': '#0079FF',
+        'button-blue-hover': '#60ABFF',
         red: '#F74646',
+        'button-text': '#FFFFFF',
     },
 
     fonts: {

@@ -1,5 +1,6 @@
 import { DefaultTheme, ThemeProvider } from 'styled-components';
 import Header from './components/Header';
+import Search from './components/Search';
 import { LIGTH } from './constants';
 import usePeristedState from './hooks/usePersistedState';
 import { MainContainer, PageContainer } from './styles';
@@ -20,6 +21,7 @@ export function App() {
             <PageContainer>
                 <MainContainer>
                     <Header toggleTheme={toggleTheme} />
+                    <Search />
                 </MainContainer>
             </PageContainer>
         </ThemeProvider>

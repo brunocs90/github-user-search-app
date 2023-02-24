@@ -11,9 +11,10 @@ export const lightTheme: DefaultTheme = {
         'text-primary': '#2B3442',
         'text-secondary': '#4B6A9B',
         'text-terciary': '#697C9A',
-        blue: '#0079FF',
-        'blue-hover': '#60ABFF',
+        'button-blue': '#0079FF',
+        'button-blue-hover': '#60ABFF',
         red: '#F74646',
+        'button-text': '#FFFFFF',
     },
 
     fonts: {

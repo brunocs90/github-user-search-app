@@ -12,9 +12,10 @@ declare module 'styled-components' {
             'text-primary': string;
             'text-secondary': string;
             'text-terciary': string;
-            blue: string;
-            'blue-hover': string;
+            'button-blue': string;
+            'button-blue-hover': string;
             red: string;
+            'button-text': string;
         };
 
         fonts: {

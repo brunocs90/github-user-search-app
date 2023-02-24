@@ -10,7 +10,6 @@ interface Props {
 
 export default function ThemeToggle({ toggleTheme }: Props) {
     const { title } = useContext(ThemeContext);
-    console.log('meu tema agora é ', title);
     return (
         <ButtonContainer onClick={toggleTheme}>
             {title === LIGTH ? (
