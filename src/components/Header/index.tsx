@@ -20,7 +20,7 @@ export default function Header({ toggleTheme }: Props) {
                 height={10}
                 width={40}
                 handleDiameter={20}
-                onColor={colors.secundary}
+                onColor={colors['blue-hover']}
             />
         </Container>
     );

@@ -8,9 +8,19 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${props => props.theme.colors.background};
-    font-size: 14px;
-    color: ${props => props.theme.colors.text};
-    font-family: sans-serif;
-  }
+        width: 100vw;
+        height: 100vh;
+        background: ${({ theme }) => theme.colors.background};
+        color: ${({ theme }) => theme.colors['text-primary']};
+        -webkit-font-smoothing: antialiased;
+    }
+    body, input, textarea, button {
+        font-family: ${({ theme }) => theme.fonts.mono};
+    }
+    button {
+        cursor: pointer;
+    }
+    a {
+        text-decoration: none;
+    }
 `;
