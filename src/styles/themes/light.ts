@@ -1,7 +1,8 @@
 import { DefaultTheme } from 'styled-components';
+import { LIGTH } from '../../constants';
 
 export const lightTheme: DefaultTheme = {
-    title: 'light',
+    title: LIGTH,
 
     colors: {
         background: '#F6F8FF',

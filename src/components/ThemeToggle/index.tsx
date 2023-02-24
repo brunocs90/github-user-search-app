@@ -1,6 +1,7 @@
 import { MoonIcon, SunIcon } from '@heroicons/react/24/solid';
 import { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
+import { LIGTH } from '../../constants';
 import { ButtonContainer } from './styles';
 
 interface Props {
@@ -12,7 +13,7 @@ export default function ThemeToggle({ toggleTheme }: Props) {
     console.log('meu tema agora é ', title);
     return (
         <ButtonContainer onClick={toggleTheme}>
-            {title === 'light' ? (
+            {title === LIGTH ? (
                 <>
                     <p>DARK</p>
                     <MoonIcon className="iconMoon" />
