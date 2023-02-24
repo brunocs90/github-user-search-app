@@ -1,6 +1,7 @@
 import { useContext } from 'react';
-import Switch from 'react-switch';
 import { ThemeContext } from 'styled-components';
+import ThemeToggle from '../ThemeToggle';
+import { HeaderContainer } from './styles';
 
 interface Props {
     toggleTheme(): void;
@@ -9,18 +10,9 @@ interface Props {
 export default function Header({ toggleTheme }: Props) {
     const { colors, title } = useContext(ThemeContext);
     return (
-        <div>
-            <div>devfinder</div>
-            <Switch
-                onChange={toggleTheme}
-                checked={title === 'dark'}
-                checkedIcon={false}
-                uncheckedIcon={false}
-                height={10}
-                width={40}
-                handleDiameter={20}
-                onColor={colors['blue-hover']}
-            />
-        </div>
+        <HeaderContainer>
+            <h1>devfinder</h1>
+            <ThemeToggle toggleTheme={toggleTheme} />
+        </HeaderContainer>
     );
 }

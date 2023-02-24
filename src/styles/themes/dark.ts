@@ -5,6 +5,7 @@ export const darkTheme: DefaultTheme = {
 
     colors: {
         background: '#141D2F',
+        header: '#FFFFFF',
         'section-background': '#1E2A47',
         'text-primary': '#FFFFFF',
         'text-secondary': '#FFFFFF',
