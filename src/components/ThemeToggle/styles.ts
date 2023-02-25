@@ -12,7 +12,7 @@ export const ButtonContainer = styled.button`
         font-weight: 700;
         line-height: ${({ theme }) => theme.Typography.H4['line-height']};
         letter-spacing: 2.5px;
-        border: solid red;
+        /* border: solid red; */
     }
     .iconMoon {
         width: 20px;
