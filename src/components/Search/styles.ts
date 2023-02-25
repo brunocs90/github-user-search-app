@@ -7,18 +7,18 @@ export const SearchContainer = styled.form`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border-radius: 15px;
+    border-radius: 0.938rem;
     background-color: ${({ theme }) => theme.colors['section-background']};
 
     padding-left: 2rem;
     padding-right: 0.625rem;
 
-    border: solid purple;
+    /* border: solid purple; */
 
     .search {
         width: 100%;
         display: flex;
-        border: solid red;
+        /* border: solid red; */
     }
 
     .inputSearch {
@@ -27,7 +27,8 @@ export const SearchContainer = styled.form`
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
-        border: solid green;
+        border: none;
+        /* border: solid green; */
         padding-left: 1.5rem;
         background-color: transparent;
 

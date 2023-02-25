@@ -7,7 +7,7 @@ export const PageContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: solid red;
+    /* border: solid red; */
 `;
 
 export const MainContainer = styled.div`
@@ -16,5 +16,5 @@ export const MainContainer = styled.div`
     align-items: flex-start;
     width: 45.625rem;
     height: 36.625rem;
-    border: solid green;
+    /* border: solid green; */
 `;

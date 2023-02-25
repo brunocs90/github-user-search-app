@@ -7,7 +7,7 @@ export const HeaderContainer = styled.header`
     align-items: center;
     justify-content: space-between;
     padding-bottom: 2.25rem;
-    border: solid blue;
+    /* border: solid blue; */
 
     h1 {
         color: ${({ theme }) => theme.colors.header};

@@ -9,9 +9,10 @@ export const ButtonContainer = styled.button`
         padding-right: 1rem;
         color: ${({ theme }) => theme.colors['text-terciary']};
         font-size: ${({ theme }) => theme.Typography.H4['font-size']};
-        font-weight: bold;
+        font-weight: 700;
         line-height: ${({ theme }) => theme.Typography.H4['line-height']};
         letter-spacing: 2.5px;
+        border: solid red;
     }
     .iconMoon {
         width: 20px;

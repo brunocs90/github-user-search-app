@@ -16,6 +16,7 @@ declare module 'styled-components' {
             'button-blue-hover': string;
             red: string;
             'button-text': string;
+            link: string;
         };
 
         fonts: {

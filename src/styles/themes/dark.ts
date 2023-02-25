@@ -15,6 +15,7 @@ export const darkTheme: DefaultTheme = {
         'button-blue-hover': '#60ABFF',
         red: '#F74646',
         'button-text': '#FFFFFF',
+        link: '#0079FF',
     },
 
     fonts: {
@@ -33,17 +34,17 @@ export const darkTheme: DefaultTheme = {
         },
         H3: {
             'font-size': '16px',
-            'font-weight': 'regular',
+            'font-weight': 'normal',
             'line-height': '24px',
         },
         H4: {
             'font-size': '13px',
-            'font-weight': 'regular',
+            'font-weight': 'normal',
             'line-height': '20px',
         },
         Body: {
             'font-size': '15px',
-            'font-weight': 'regular',
+            'font-weight': 'normal',
             'line-height': '25px',
         },
     },
