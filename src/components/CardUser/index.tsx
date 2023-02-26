@@ -1,9 +1,10 @@
+import UserHeader from '../UserHeader';
 import { CardUserContainer } from './styles';
 
 export default function CardUser() {
     return (
         <CardUserContainer>
-            <div className="imagem">minha imagem</div>
+            <UserHeader />
         </CardUserContainer>
     );
 }

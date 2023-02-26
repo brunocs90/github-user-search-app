@@ -5,12 +5,8 @@ export const CardUserContainer = styled.div`
     height: 444px;
     border-radius: 15px;
     margin-top: 24px;
+    padding: 3rem;
+    border: 1px solid red;
 
-    border: solid red;
-
-    .imagem {
-        border: solid green;
-        width: 117px;
-        height: 100%;
-    }
+    background-color: ${({ theme }) => theme.colors['section-background']};
 `;
