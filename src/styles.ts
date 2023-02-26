@@ -15,6 +15,6 @@ export const MainContainer = styled.div`
     flex-direction: column;
     align-items: flex-start;
     width: 45.625rem;
-    height: 36.625rem;
+    height: 38.188rem;
     /* border: solid green; */
 `;
