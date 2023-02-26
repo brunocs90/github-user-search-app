@@ -28,7 +28,6 @@ export const SearchContainer = styled.form`
         justify-content: center;
         flex-direction: column;
         border: none;
-        /* border: solid green; */
         padding-left: 1.5rem;
         background-color: transparent;
 
@@ -53,6 +52,26 @@ export const SearchContainer = styled.form`
 
         :hover {
             background-color: ${({ theme }) => theme.colors['button-blue-hover']};
+        }
+    }
+
+    @media (max-width: 768px) {
+        height: 3.75rem;
+        padding-left: 1rem;
+        padding-right: 0.438rem;
+        /* border: solid green; */
+
+        .inputSearch {
+            padding-left: 0.559rem;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 25px;
+        }
+
+        button {
+            width: 84px;
+            height: 46px;
+            border-radius: 10px;
         }
     }
 `;

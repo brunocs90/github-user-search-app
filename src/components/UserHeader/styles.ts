@@ -7,10 +7,10 @@ export const UserHeaderContainer = styled.div`
     grid-template-rows: 4.063rem auto;
     /* border: solid red; */
 
-    /* div {
+    div {
         color: black;
-        border: 1px solid blue;
-    } */
+        /* border: 1px solid blue; */
+    }
 
     #item-1 {
         grid-row-start: 1;
@@ -66,5 +66,58 @@ export const UserHeaderContainer = styled.div`
         font-size: ${({ theme }) => theme.Typography.Body['font-size']};
         font-weight: ${({ theme }) => theme.Typography.Body['font-weight']};
         line-height: ${({ theme }) => theme.Typography.Body['line-height']};
+    }
+
+    @media (max-width: 768px) {
+        height: 11.125rem;
+        display: grid;
+        grid-template-columns: 4.375rem auto;
+        grid-template-rows: 2.688rem auto auto;
+
+        #item-1 {
+            .avatar {
+                width: 4.375rem;
+                height: 4.375rem;
+            }
+        }
+
+        #item-2 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+            margin-left: 1.188rem;
+            flex-direction: column;
+
+            .user {
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 24px;
+            }
+
+            .login {
+                font-size: 12px;
+                padding-top: 0px;
+            }
+
+            .join {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 19.25px;
+                padding-top: 0px;
+            }
+        }
+
+        #item-3 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+
+            margin-left: 0;
+            /* border: solid blue; */
+            padding-top: 1rem;
+
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 25px;
+        }
     }
 `;

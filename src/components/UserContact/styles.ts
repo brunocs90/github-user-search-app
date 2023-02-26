@@ -80,4 +80,49 @@ export const UserContactContainer = styled.div`
     ul:last-child {
         padding-top: 20px;
     }
+
+    @media (max-width: 768px) {
+        .items {
+            margin-left: 0px;
+        }
+
+        ul {
+            flex-direction: column;
+
+            font-size: 13px;
+
+            li {
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+
+                padding-bottom: 6px;
+            }
+
+            .location {
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            .twitter {
+                padding-left: 0px;
+            }
+
+            .link {
+                a {
+                    font-size: 13px;
+                }
+            }
+
+            .building {
+                padding-left: 0px;
+            }
+        }
+
+        ul:last-child {
+            padding-top: 0px;
+        }
+    }
 `;

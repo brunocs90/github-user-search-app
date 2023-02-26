@@ -9,4 +9,10 @@ export const CardUserContainer = styled.div`
     /* border: 1px solid red; */
 
     background-color: ${({ theme }) => theme.colors['section-background']};
+
+    @media (max-width: 768px) {
+        height: 32.313rem;
+        margin-top: 1rem;
+        padding: 2rem 1.5rem;
+    }
 `;

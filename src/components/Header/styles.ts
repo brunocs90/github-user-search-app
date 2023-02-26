@@ -15,4 +15,8 @@ export const HeaderContainer = styled.header`
         font-weight: ${({ theme }) => theme.Typography.H1['font-weight']};
         line-height: ${({ theme }) => theme.Typography.H1['line-height']};
     }
+
+    @media (max-width: 768px) {
+        /* border: solid white; */
+    }
 `;

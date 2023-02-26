@@ -17,4 +17,11 @@ export const MainContainer = styled.div`
     width: 45.625rem;
     height: 38.188rem;
     /* border: solid green; */
+
+    @media (max-width: 768px) {
+        /* border: solid red; */
+        width: 20.438rem;
+        height: 41.688rem;
+        /* border: solid white; */
+    }
 `;
