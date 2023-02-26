@@ -6,7 +6,7 @@ export const CardUserContainer = styled.div`
     border-radius: 15px;
     margin-top: 24px;
     padding: 3rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     background-color: ${({ theme }) => theme.colors['section-background']};
 `;

@@ -5,12 +5,12 @@ export const UserHeaderContainer = styled.div`
     display: grid;
     grid-template-columns: 7.313rem auto auto;
     grid-template-rows: 4.063rem auto;
-    border: solid red;
+    /* border: solid red; */
 
-    div {
+    /* div {
         color: black;
         border: 1px solid blue;
-    }
+    } */
 
     #item-1 {
         grid-row-start: 1;
