@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const UserHeaderContainerBio = styled.div`
+export const UserHeaderContainer = styled.div`
     height: 8.438rem;
     display: grid;
     grid-template-columns: 7.313rem auto auto;
@@ -42,6 +42,9 @@ export const UserHeaderContainerBio = styled.div`
         .login {
             padding-top: 2px;
             color: ${({ theme }) => theme.colors.link};
+            :hover {
+                text-decoration: underline;
+            }
         }
 
         .join {
@@ -57,6 +60,7 @@ export const UserHeaderContainerBio = styled.div`
         grid-column-start: 2;
         grid-column-end: 4;
         margin-left: 2.25rem;
+        padding-top: 15px;
 
         color: ${({ theme }) => theme.colors['text-primary']};
         font-size: ${({ theme }) => theme.Typography.Body['font-size']};

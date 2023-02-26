@@ -1,14 +1,14 @@
-import { UserHeaderContainerBio } from './styles';
+import { UserHeaderContainer } from './styles';
 
 export default function UserHeader() {
     return (
-        <UserHeaderContainerBio>
+        <UserHeaderContainer>
             <div id="item-1">
                 <img className="avatar" src="https://github.com/brunocs90.png" alt="" />
             </div>
             <div id="item-2">
                 <div>
-                    <h2 className="user">The Octocatdsadasd</h2>
+                    <h2 className="user">The Octocat</h2>
                     <a className="login" href="">
                         @octocat
                     </a>
@@ -20,6 +20,6 @@ export default function UserHeader() {
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
                 </p>
             </div>
-        </UserHeaderContainerBio>
+        </UserHeaderContainer>
     );
 }
