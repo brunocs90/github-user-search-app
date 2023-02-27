@@ -44,6 +44,29 @@ export const UserStatisticsContainer = styled.div`
     }
 
     @media (max-width: 768px) {
+        ul {
+            margin-left: 0px;
+            padding: 0 5.125rem 0 2rem;
+
+            justify-content: space-between;
+            align-items: center;
+
+            li {
+                p {
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 19.25px;
+                }
+                h3 {
+                    font-size: 22px;
+                    font-weight: 700;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 655px) {
         margin-top: 23px;
 
         /* border: solid green; */

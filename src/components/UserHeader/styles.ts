@@ -7,10 +7,9 @@ export const UserHeaderContainer = styled.div`
     grid-template-rows: 4.063rem auto;
     /* border: solid red; */
 
-    div {
+    /* div {
         color: black;
-        /* border: 1px solid blue; */
-    }
+    } */
 
     #item-1 {
         grid-row-start: 1;
@@ -69,6 +68,51 @@ export const UserHeaderContainer = styled.div`
     }
 
     @media (max-width: 768px) {
+        height: 11.938rem;
+        display: grid;
+        grid-template-columns: 7.313rem auto;
+        grid-template-rows: 5.688rem auto auto;
+
+        #item-2 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+            margin-left: 2.56rem;
+            flex-direction: column;
+
+            .user {
+                font-size: 26px;
+                font-weight: bold;
+                line-height: 38.51px;
+            }
+
+            .login {
+                font-size: 16px;
+            }
+
+            .join {
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 19.25px;
+                padding-top: 0px;
+            }
+        }
+
+        #item-3 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+
+            margin-left: 0;
+            /* border: solid blue; */
+            padding-top: 1rem;
+
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 25px;
+        }
+    }
+
+    @media (max-width: 655px) {
         height: 11.125rem;
         display: grid;
         grid-template-columns: 4.375rem auto;

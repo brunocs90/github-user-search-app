@@ -56,6 +56,9 @@ export const SearchContainer = styled.form`
     }
 
     @media (max-width: 768px) {
+    }
+
+    @media (max-width: 655px) {
         height: 3.75rem;
         padding-left: 1rem;
         padding-right: 0.438rem;

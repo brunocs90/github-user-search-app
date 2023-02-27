@@ -11,6 +11,12 @@ export const CardUserContainer = styled.div`
     background-color: ${({ theme }) => theme.colors['section-background']};
 
     @media (max-width: 768px) {
+        height: 30.063rem;
+        margin-top: 1rem;
+        padding: 3.313rem 2.5rem;
+    }
+
+    @media (max-width: 655px) {
         height: 32.313rem;
         margin-top: 1rem;
         padding: 2rem 1.5rem;

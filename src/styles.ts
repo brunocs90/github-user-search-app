@@ -19,9 +19,14 @@ export const MainContainer = styled.div`
     /* border: solid green; */
 
     @media (max-width: 768px) {
+        /* border: solid blue; */
+        width: 35.813rem;
+        height: 40.5rem;
+    }
+
+    @media (max-width: 655px) {
         /* border: solid red; */
         width: 20.438rem;
         height: 41.688rem;
-        /* border: solid white; */
     }
 `;
