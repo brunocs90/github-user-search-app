@@ -36,6 +36,7 @@ export const UserHeaderContainer = styled.div`
             font-size: ${({ theme }) => theme.Typography.H1['font-size']};
             font-weight: ${({ theme }) => theme.Typography.H1['font-weight']};
             line-height: ${({ theme }) => theme.Typography.H1['line-height']};
+            padding-right: 15px;
         }
 
         .login {
@@ -51,7 +52,7 @@ export const UserHeaderContainer = styled.div`
             font-size: ${({ theme }) => theme.Typography.Body['font-size']};
             font-weight: ${({ theme }) => theme.Typography.Body['font-weight']};
             line-height: ${({ theme }) => theme.Typography.Body['line-height']};
-            padding-top: 7px;
+            padding-top: 6px;
         }
     }
 

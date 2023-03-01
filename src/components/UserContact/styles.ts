@@ -57,6 +57,16 @@ export const UserContactContainer = styled.div`
 
         .twitter {
             padding-left: 25px;
+            a {
+                color: ${({ theme }) => theme.colors['text-secondary']};
+                font-size: ${({ theme }) => theme.Typography.Body['font-size']};
+                font-weight: ${({ theme }) => theme.Typography.Body['font-weight']};
+                line-height: ${({ theme }) => theme.Typography.Body['line-height']};
+
+                :hover {
+                    text-decoration: underline;
+                }
+            }
         }
 
         .link {
@@ -106,6 +116,9 @@ export const UserContactContainer = styled.div`
 
             .twitter {
                 padding-left: 25px;
+                a {
+                    font-size: 15px;
+                }
             }
 
             .link {
@@ -151,6 +164,9 @@ export const UserContactContainer = styled.div`
 
             .twitter {
                 padding-left: 0px;
+                a {
+                    font-size: 13px;
+                }
             }
 
             .link {

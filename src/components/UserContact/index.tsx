@@ -1,28 +1,47 @@
 import { BuildingIcon, LinkIcon, LocationIcon, TwitterIcon } from '../Icons';
 import { UserContactContainer } from './styles';
 
-export default function UserContact() {
+interface UserLinksProps {
+    location: string;
+    blog: string;
+    twitter: string;
+    company: string;
+}
+
+export default function UserContact({ location, blog, twitter, company }: UserLinksProps) {
     return (
         <UserContactContainer>
             <div className="items">
                 <ul>
                     <li className="icon location">
                         <LocationIcon />
-                        <p>San Francisco</p>
+                        <p>{location ? location : 'Not Available'}</p>
                     </li>
                     <li className="icon twitter">
                         <TwitterIcon />
-                        <p>Not Available</p>
+                        {twitter ? (
+                            <a href={twitter && `https://twitter.com/${twitter}`} target="_blank">
+                                {twitter}
+                            </a>
+                        ) : (
+                            <p>Not Available</p>
+                        )}
                     </li>
                 </ul>
                 <ul>
                     <li className="icon link">
                         <LinkIcon />
-                        <a href="">https://github.blog</a>
+                        {blog ? (
+                            <a href={blog} target="_blank">
+                                {blog}
+                            </a>
+                        ) : (
+                            <p>Not Available</p>
+                        )}
                     </li>
                     <li className="icon building">
                         <BuildingIcon />
-                        <p>@github</p>
+                        <p>{company ? company : 'Not Available'}</p>
                     </li>
                 </ul>
             </div>

@@ -1,25 +1,31 @@
-import imagem from '../../assets/imageTest.png';
+import { date } from '../../utils/date';
 import { UserHeaderContainer } from './styles';
 
-export default function UserHeader() {
+interface UserHeaderProps {
+    avatar: string;
+    name: string;
+    login: string;
+    created_at: string;
+    bio: string;
+}
+
+export default function UserHeader({ avatar, name, login, created_at, bio }: UserHeaderProps) {
     return (
         <UserHeaderContainer>
             <div id="item-1">
-                <img className="avatar" src={imagem} alt="" />
+                <img className="avatar" src={avatar} alt="" />
             </div>
             <div id="item-2">
                 <div>
-                    <h2 className="user">The Octocat</h2>
-                    <a className="login" href="">
-                        @octocat
+                    <h2 className="user">{name}</h2>
+                    <a href={`https://github.com/${login}`} className="login" target="_blank">
+                        @{login}
                     </a>
                 </div>
-                <p className="join">Joined 25 Jan 2011</p>
+                <p className="join">{'Joined ' + date.convertDate(created_at)}</p>
             </div>
             <div id="item-3">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
-                </p>
+                <p>{bio}</p>
             </div>
         </UserHeaderContainer>
     );

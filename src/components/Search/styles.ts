@@ -15,19 +15,28 @@ export const SearchContainer = styled.form`
 
     /* border: solid purple; */
 
+    .items {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 24px;
+    }
+
     .search {
         width: 100%;
         display: flex;
-        /* border: solid red; */
+        align-items: center;
     }
 
     .inputSearch {
-        width: 100%;
         display: flex;
+        flex: 1;
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
-        border: none;
+        border: 0;
         padding-left: 1.5rem;
         background-color: transparent;
 
@@ -39,6 +48,18 @@ export const SearchContainer = styled.form`
         ::placeholder {
             color: ${({ theme }) => theme.colors['text-secondary']};
         }
+
+        :focus {
+            outline: none;
+        }
+    }
+
+    .notFound {
+        width: 110px;
+        color: ${({ theme }) => theme.colors.red};
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 22px;
     }
 
     button {
@@ -64,11 +85,19 @@ export const SearchContainer = styled.form`
         padding-right: 0.438rem;
         /* border: solid green; */
 
+        .items {
+            padding-right: 0;
+        }
+
         .inputSearch {
             padding-left: 0.559rem;
             font-size: 13px;
             font-weight: 400;
             line-height: 25px;
+        }
+
+        .notFound {
+            display: none;
         }
 
         button {
