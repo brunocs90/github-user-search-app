@@ -1,10 +1,9 @@
-import { Dispatch, SetStateAction, useState } from 'react';
+import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 
 type Response<T> = [T, Dispatch<SetStateAction<T>>];
 
 export function usePersistedState<T>(key: string, initialState: T): Response<T> {
     const [state, setState] = useState(() => {
-        return initialState;
         const storageValue = localStorage.getItem(key);
 
         if (storageValue) {
@@ -14,9 +13,9 @@ export function usePersistedState<T>(key: string, initialState: T): Response<T> 
         }
     });
 
-    // useEffect(() => {
-    //     localStorage.setItem(key, JSON.stringify(state));
-    // }, [key, state]);
+    useEffect(() => {
+        localStorage.setItem(key, JSON.stringify(state));
+    }, [key, state]);
 
     return [state, setState];
 }
