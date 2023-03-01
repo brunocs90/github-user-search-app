@@ -16,7 +16,23 @@ export default function Search({ onSubmit, notFound }: SearchProps) {
     };
     return (
         <SearchContainer onSubmit={submitForm}>
-            <div className="items">
+            <div className="searchItems">
+                <SearchIcon />
+                <input
+                    maxLength={15}
+                    type="text"
+                    className="inputSearch"
+                    placeholder="Search Github username..."
+                    value={inputValue}
+                    onChange={e => setInputValue(e.target.value)}
+                />
+            </div>
+            <div className="noResults">
+                {notFound && <span className={'notFound'}>No Results</span>}
+                <button>Search</button>
+            </div>
+
+            {/* <div className="items">
                 <div className="search">
                     <SearchIcon />
                     <input
@@ -31,7 +47,7 @@ export default function Search({ onSubmit, notFound }: SearchProps) {
                 {notFound && <span className={'notFound'}>No Results</span>}
             </div>
 
-            <button>Search</button>
+            <button>Search</button> */}
         </SearchContainer>
     );
 }

@@ -15,24 +15,19 @@ export const SearchContainer = styled.form`
 
     /* border: solid purple; */
 
-    .items {
+    .searchItems {
         width: 100%;
         height: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
-        padding-right: 24px;
-    }
 
-    .search {
-        width: 100%;
-        display: flex;
-        align-items: center;
+        /* border: solid gray; */
     }
 
     .inputSearch {
+        width: 100%;
         display: flex;
-        flex: 1;
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
@@ -54,8 +49,16 @@ export const SearchContainer = styled.form`
         }
     }
 
+    .noResults {
+        /* border: solid red; */
+        width: 21.113rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
     .notFound {
-        width: 110px;
+        padding-right: 24px;
         color: ${({ theme }) => theme.colors.red};
         font-size: 15px;
         font-weight: 700;
@@ -77,6 +80,16 @@ export const SearchContainer = styled.form`
     }
 
     @media (max-width: 768px) {
+        .inputSearch {
+            padding-left: 0.559rem;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+        }
+        .noResults {
+            /* border: solid blue; */
+            width: 24.813rem;
+        }
     }
 
     @media (max-width: 655px) {
@@ -85,18 +98,27 @@ export const SearchContainer = styled.form`
         padding-right: 0.438rem;
         /* border: solid green; */
 
-        .items {
-            padding-right: 0;
-        }
-
         .inputSearch {
             padding-left: 0.559rem;
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 400;
             line-height: 25px;
         }
 
+        .noResults {
+            width: 6.875rem;
+            /* border: solid blue; */
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
         .notFound {
+            /* flex-wrap: wrap;
+            text-align: center;
+            padding-right: 0;
+            font-size: 10px;
+            line-height: 10px; */
             display: none;
         }
 
