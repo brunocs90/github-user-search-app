@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { DefaultTheme, ThemeProvider } from 'styled-components';
 import { GitHubAPI } from './api/GitHubAPI';
 import imagem from './assets/imageTest.png';
@@ -29,20 +29,20 @@ export interface User {
 
 export function App() {
     const [theme, setTheme] = usePeristedState<DefaultTheme>('theme', lightTheme);
-    const [userName, setUserName] = useState('brunocs90');
+    const [userName, setUserName] = useState('octocat');
     const [notFound, setNotFound] = useState(false);
     const [dataUser, setDataUser] = useState<User>({
         avatar_url: imagem,
-        bio: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.',
-        blog: 'https://github.blog',
-        company: '@github',
-        created_at: '2011-01-25T09:34:17Z',
-        followers: 3938,
-        following: 9,
-        location: 'San Francisco',
-        login: '@octocat',
-        name: 'The Octocat',
-        public_repos: 8,
+        bio: '',
+        blog: '',
+        company: '',
+        created_at: '',
+        followers: 0,
+        following: 0,
+        location: '',
+        login: '',
+        name: '',
+        public_repos: 0,
         twitter_username: '',
     });
 
@@ -51,6 +51,7 @@ export function App() {
     };
 
     async function fetchUserGitHub(userSearch: string) {
+        console.log('fazendo consulta do usuario', userSearch);
         try {
             const request = await GitHubAPI.fetchUsers(userSearch);
             if (request !== undefined) {
@@ -65,6 +66,10 @@ export function App() {
             }, 2000);
         }
     }
+
+    useEffect(() => {
+        fetchUserGitHub(userName);
+    }, []);
 
     return (
         <ThemeProvider theme={theme}>

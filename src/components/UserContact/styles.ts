@@ -29,6 +29,10 @@ export const UserContactContainer = styled.div`
             width: 100%;
             display: flex;
             align-items: flex-start;
+
+            .opacity {
+                opacity: 0.75;
+            }
             /* border: solid red; */
         }
 

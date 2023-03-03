@@ -66,6 +66,10 @@ export const UserHeaderContainer = styled.div`
         font-size: ${({ theme }) => theme.Typography.Body['font-size']};
         font-weight: ${({ theme }) => theme.Typography.Body['font-weight']};
         line-height: ${({ theme }) => theme.Typography.Body['line-height']};
+
+        .opacity {
+            opacity: 0.75;
+        }
     }
 
     @media (max-width: 768px) {

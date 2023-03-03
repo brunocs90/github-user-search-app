@@ -15,7 +15,7 @@ export default function UserContact({ location, blog, twitter, company }: UserLi
                 <ul>
                     <li className="icon location">
                         <LocationIcon />
-                        <p>{location ? location : 'Not Available'}</p>
+                        {location ? <p>{location}</p> : <p className="opacity">Not Available</p>}
                     </li>
                     <li className="icon twitter">
                         <TwitterIcon />
@@ -24,7 +24,7 @@ export default function UserContact({ location, blog, twitter, company }: UserLi
                                 {twitter}
                             </a>
                         ) : (
-                            <p>Not Available</p>
+                            <p className="opacity">Not Available</p>
                         )}
                     </li>
                 </ul>
@@ -36,12 +36,12 @@ export default function UserContact({ location, blog, twitter, company }: UserLi
                                 {blog}
                             </a>
                         ) : (
-                            <p>Not Available</p>
+                            <p className="opacity">Not Available</p>
                         )}
                     </li>
                     <li className="icon building">
                         <BuildingIcon />
-                        <p>{company ? company : 'Not Available'}</p>
+                        {company ? <p>{company}</p> : <p className="opacity">Not Available</p>}
                     </li>
                 </ul>
             </div>

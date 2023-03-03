@@ -24,9 +24,7 @@ export default function UserHeader({ avatar, name, login, created_at, bio }: Use
                 </div>
                 <p className="join">{'Joined ' + date.convertDate(created_at)}</p>
             </div>
-            <div id="item-3">
-                <p>{bio}</p>
-            </div>
+            <div id="item-3">{bio ? <p>{bio}</p> : <p className="opacity">This profile has no bio</p>}</div>
         </UserHeaderContainer>
     );
 }

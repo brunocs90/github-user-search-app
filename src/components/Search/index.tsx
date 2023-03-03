@@ -8,7 +8,7 @@ type SearchProps = {
 };
 
 export default function Search({ onSubmit, notFound }: SearchProps) {
-    const [inputValue, setInputValue] = useState('');
+    const [inputValue, setInputValue] = useState('octocat');
 
     const submitForm = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
